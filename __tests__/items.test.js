@@ -83,7 +83,6 @@ describe('items', () => {
   it('UPDATE /api/v1/items/:id should update an item', async () => {
     // create a user
     const [agent, user] = await registerAndLogin();
-    console.log(user);
     const item = await Item.insert({
       description: 'apples',
       qty: 6,
